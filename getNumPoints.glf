@@ -1,4 +1,9 @@
 package require PWI_Glyph
+
+#
+# This may be slightly more concise, but it turns out that the exact objective
+# of this script is achievable by selecting the target connectors and using the
+# "Grid Cell Count" function provided by Pointwise (Grid->Cell Count).
 #
 # Use selected connector or prompt user for selection if nothing is selected at
 # run time.

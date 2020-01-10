@@ -15,10 +15,10 @@ if { !([pw::Display getSelectedEntities -selectionmask $mask selection]) } {
 
   if { !([pw::Display selectEntities \
          -selectionmask $mask \
-         -description "Select initial connector" \
+         -description "Select connectors" \
        selection]) } {
 
-    puts "Error: Unsuccessfully selected connector... exiting"
+    puts "Error: Unsuccessfully selected connectors... exiting"
     exit
   }
 }

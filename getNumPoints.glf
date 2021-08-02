@@ -22,13 +22,13 @@ proc CountDuplicates {list} {
 # of this script is achievable by selecting the target connectors and using the
 # "Grid Cell Count" function provided by Pointwise (Grid->Cell Count).
 #
-# Use selected connector or prompt user for selection if nothing is selected at
-# run time.
+# Use selected connector(s) or prompt user for selection if nothing is selected
+# at run time.
 #
 set mask [pw::Display createSelectionMask -requireConnector {}]
 
 if { !([pw::Display getSelectedEntities -selectionmask $mask selection]) } {
-  # No connector was selected at runtime; prompt for one now.
+  # No connector(s) was selected at runtime; prompt for one/some now.
 
   if { !([pw::Display selectEntities \
          -selectionmask $mask \
